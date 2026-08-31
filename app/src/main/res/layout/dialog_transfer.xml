@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From Wallet:"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+    <Spinner
+        android:id="@+id/spinnerSourceWallet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To Wallet:"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+    <Spinner
+        android:id="@+id/spinnerDestWallet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etTransferAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Amount (e.g. 50.00)"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etTransferNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Note (e.g. ATM Withdrawal)"
+        android:inputType="textCapSentences"/>
+
+</LinearLayout>
